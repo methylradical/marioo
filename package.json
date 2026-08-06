@@ -1,0 +1,19 @@
+{
+  "name": "3d-platformer",
+  "version": "1.0.0",
+  "description": "An original browser-based 3D platformer prototype. It uses cheerful low-poly procedural geometry and does not use Mario names, character likenesses, official music, official sound effects, pipes, mushrooms, or ripped assets.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "three": "0.160.0"
+  }
+}

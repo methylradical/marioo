@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jump Plumber - 2D Platformer</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="game-shell">
+    <header class="hud">
+      <div class="brand">
+        <span class="badge" aria-hidden="true"></span>
+        <div>
+          <h1>Jump Plumber</h1>
+          <p>Original 2D platform challenge</p>
+        </div>
+      </div>
+      <div class="stats">
+        <span>Stage <strong id="level">1/3</strong></span>
+        <span>Score <strong id="score">0</strong></span>
+        <span>Coins <strong id="coins">0/0</strong></span>
+        <span>Air Jumps <strong id="jumps">0</strong></span>
+        <span>Power <strong id="power">x1.0</strong></span>
+        <span>Lives <strong id="lives">3</strong></span>
+        <span>Time <strong id="time">0.0</strong>s</span>
+      </div>
+      <div class="actions">
+        <button id="restart" type="button">Restart</button>
+        <button id="new-game" type="button">New Game</button>
+      </div>
+    </header>
+
+    <section class="game-frame" aria-label="2D platform game">
+      <canvas id="game" width="960" height="540"></canvas>
+      <div id="screen" class="screen">
+        <div class="screen-panel">
+          <p class="eyebrow">10 Scenes</p>
+          <h2 id="screen-title">Jump Plumber</h2>
+          <p id="screen-text">Collect coins for air jumps, stomp moving objects to grow, and reach the finish flag.</p>
+          <button id="start" type="button">Start</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="controls">
+      <span>Move: A/D or Arrow Keys</span>
+      <span>Jump: Space / W / Up</span>
+      <span>Double jump: press jump again in air</span>
+      <span>Coins fuel air jumps</span>
+      <span>Stomp moving objects to grow</span>
+      <span>Body hit while small costs a life</span>
+      <span>Progress is saved</span>
+    </footer>
+  </main>
+  <script type="module" src="./src/main2d.js"></script>
+</body>
+</html>
